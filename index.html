@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lovely Bharti | Landing Page</title>
+  <title>eGov Landing Page | Lovely Bharti</title>
   
-  <!-- Fonts & Bootstrap 5 -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- NAVBAR-->
+  <!-- Navbar As Per Reference -->
   <nav class="navbar navbar-expand-lg nav-f sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">LB.DEV</a>
-      
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="text-navy">e</span><span class="text-primary">GOV</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#work">Projects</a>
-          </li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">About eGov</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Platforms</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#work">Latest</a></li>
           <li class="nav-item ms-lg-2">
             <a class="btn btn-primary rounded-pill px-4 shadow-sm" href="https://www.linkedin.com/in/YOUR-ID" target="_blank">LinkedIn 🤝</a>
           </li>
@@ -37,82 +35,83 @@
     </div>
   </nav>
 
-  <main>
-    <!-- HERO SECTION -->
-    <header class="hero py-5">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-bold">🚀 1.3+ Years Proficient Experience</span>
-            <h1 class="fw-bold display-4">Software Developer & AIML Learner</h1>
-            <p class="fs-5 mt-3 text-dark">"Turning data into logic, and logic into intelligence. 🧠"</p>
-            <p class="lead text-muted">Building high-performance MERN applications today while engineering AI solutions for tomorrow.</p>
-            <div class="mt-4">
-              <a href="#work" class="btn btn-dark rounded-3 px-4 py-2 shadow">Explore My Code</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <img src="https://picsum.photos/seed/tech/600/450" class="img-fluid rounded-4 shadow-lg" alt="Developer Portfolio">
+  <!-- Hero Section-->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          
+          <h1 class="fw-bold display-4 text-navy">20 years of digital transformation in public service delivery.</h1>
+          <h2 class="fw-bold text-primary mb-4">It's possible.</h2>
+          <p class="lead text-muted">Building open-source technology-for-good platforms to impact lives at scale. [MERN Developer & AIML Learner]</p>
+          <div class="mt-4">
+            <a href="#work" class="btn btn-primary rounded-pill px-4 py-2 shadow">Explore Our Platforms</a>
           </div>
         </div>
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/seed/egov-hero/800/600" class="img-fluid rounded-4 shadow-lg" alt="eGov Transformation">
+        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- PROJECTS SECTION -->
-    <section id="work" class="bg-light py-5">
-      <div class="container py-5">
-        <h2 class="fw-bold text-center mb-5">Featured Projects</h2>
-        <div class="row g-4">
-          <!-- Project 1 -->
-          <div class="col-md-4">
-            <div class="card-p">
-              <img src="https://picsum.photos/seed/task/400/250" class="img-fluid rounded-3 mb-3" alt="Task Manager">
-              <h3 class="h5 fw-bold">Task Manager</h3>
-              <p class="text-muted small">Efficient MERN workflow tracker for task management.</p>
-              <a href="https://lovelybharti.github.io/Task-Manager-Application/" target="_blank" class="fw-bold text-decoration-none">Live Demo →</a>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="col-md-4">
-            <div class="card-p">
-              <img src="https://picsum.photos/seed/movie/400/250" class="img-fluid rounded-3 mb-3" alt="Movie Hub">
-              <h3 class="h5 fw-bold">Movie Hub</h3>
-              <p class="text-muted small">API-driven movie search portal for real-time data.</p>
-              <a href="https://lovelybharti.github.io/Movie-Hub/" target="_blank" class="fw-bold text-decoration-none">Live Demo →</a>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="col-md-4">
-            <div class="card-p">
-              <img src="https://picsum.photos/seed/weather/400/250" class="img-fluid rounded-3 mb-3" alt="Weather App">
-              <h3 class="h5 fw-bold">Weather App</h3>
-              <p class="text-muted small">Dynamic weather tracking using open-source weather APIs.</p>
-              <a href="https://lovelybharti.github.io/Weather-Application/" target="_blank" class="fw-bold text-decoration-none">Live Demo →</a>
+  <!--Gov Section -->
+  <section id="work" class="bg-light-blue py-5">
+    <div class="container py-5">
+      <h2 class="fw-bold text-navy mb-4">Latest at <span class="text-primary">eGov</span></h2>
+      
+      <div class="d-flex flex-wrap gap-2 mb-5">
+        <button class="btn btn-primary rounded-pill"> All Articles</button>
+        <button class="btn btn-outline-secondary rounded-pill bg-white"> DIGIT </button>
+        <button class="btn btn-outline-secondary rounded-pill bg-white"> Updates </button>
+        <button class="btn btn-outline-secondary rounded-pill bg-white"> Case Study </button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="card-egov">
+            <img src="https://picsum.photos/seed/digit1/400/250" class="img-fluid" alt="DIGIT">
+            <div class="p-4">
+              <h5 class="fw-bold text-navy">DIGIT Platform</h5>
+              <p class="text-muted small">Standardizing digital infrastructure for urban governance.</p>
+              <a href="#" class="text-primary fw-bold text-decoration-none">Read more →</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section class="cta py-5 text-center text-white">
-      <div class="container py-5">
-        <h2 class="fw-bold display-5 mb-3">Hire a Developer who grows with your team.</h2>
-        <p class="fs-4 mb-5">"Invest in my growth, and I’ll deliver results you won't regret. Let's build something impactful."</p>
-        <div class="d-flex justify-content-center gap-3">
-       
-          <a href="mailto:lovelybharti7566@gmail.com?subject=Job Inquiry" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow">Send Email ✉️</a>
-          <a href="https://www.linkedin.com/in/YOUR-ID" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">LinkedIn 🤝</a>
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+          <div class="card-egov">
+            <img src="https://picsum.photos/seed/digit2/400/250" class="img-fluid" alt="IUDX">
+            <div class="p-4 text-center">
+              <h5 class="fw-bold text-navy">Data Exchange</h5>
+              <p class="text-muted small">Enabling secure data sharing across public systems.</p>
+              <a href="#" class="text-primary fw-bold text-decoration-none">Explore App →</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+          <div class="card-egov">
+            <img src="https://picsum.photos/seed/digit3/400/250" class="img-fluid" alt="Case Study">
+            <div class="p-4">
+              <h5 class="fw-bold text-navy">Impact Report</h5>
+              <p class="text-muted small">Optimizing service delivery for 1 billion+ citizens.</p>
+              <a href="#" class="text-primary fw-bold text-decoration-none">View Details →</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="py-4 text-center border-top bg-white">
-    <p class="text-muted small">© 2026 Lovely Bharti • Software Developer Portfolio</p>
-  </footer>
+  <!-- CTA  -->
+  <section class="cta py-5 text-center text-white">
+    <div class="container py-5">
+      <h2 class="fw-bold display-5 mb-3">Connect with our engineering team.</h2>
+      <a href="mailto:lovelybharti7566@gmail.com?subject=Inquiry" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow">Send Email ✉️</a>
+    </div>
+  </section>
 
-  <!-- Bootstrap JS  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
