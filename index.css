@@ -1,9 +1,13 @@
-body { 
-  font-family: 'DM Sans', sans-serif; 
-  color: #333;
+:root {
+  --egov-navy: #002b5c;
+  --egov-blue: #007bff;
+  --bg-light: #f4f7fa;
 }
 
-/* Navbar*/
+body { font-family: 'DM Sans', sans-serif; color: #333; }
+
+.text-navy { color: var(--egov-navy); }
+
 .nav-f {
   background-color: white !important;
   border-bottom: 1px solid #eee;
@@ -12,30 +16,27 @@ body {
 }
 
 .hero { 
-  padding: 60px 0; 
+  padding: 100px 0; 
+  background: white;
 }
 
-.card-p {
+.bg-light-blue { background-color: var(--bg-light); }
+
+.card-egov {
   background: white;
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
   height: 100%;
 }
 
-.cta { 
-  background-color: #0d6efd !important; 
-  color: white !important;
-}
+.card-egov:hover { transform: translateY(-8px); }
 
-h1 { 
-  font-size: 3.5rem; 
-  letter-spacing: -1.5px; 
-  line-height: 1.1; 
-}
+.cta { background-color: var(--egov-blue) !important; }
 
-/* Mobile specific */
+h1 { font-size: 3rem; letter-spacing: -1px; line-height: 1.1; }
+
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  .nav-item { padding: 5px 0; }
+  h1 { font-size: 2.2rem; }
 }
